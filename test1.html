@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Study | Welcome to my Gallery</title>
+    <link rel="stylesheet" href="assets/fontawesome-free-6.2.1-web/css/all.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <style type="text/tailwindcss">
+        * {
+            border: 1px solid red;
+        }
+    </style> -->
+</head>
+<body>
+
+<!-- untuk Navbar -->
+
+<section class="w-full mx-auto p-5 shadow-lg rounded-lg">
+    <nav class="flex justify-between">
+        <div class="flex">
+            <a href="test1.html">
+                <i class="mx-2 fa-2xl fa-solid fa-panorama"></i><span class="font-mono">CaseStudy.id</span>
+            </a>
+        </div>
+        <div class="flex items-center">
+            <div class="gap-5 font-bold uppercase">
+                <a href="test1.html" class="py-2 px-5 text-black">Test 1</a>
+                <a href="" class="hidden py-2 px-5 text-black">Test 2</a> <!-- IN PROGRESS-->
+                <a href="" class="hidden py-2 px-5 text-black">Test 3</a> <!-- IN PROGRESS-->
+            </div>
+        </div>
+        <div class="flex items-center">
+            <div class="mx-auto font-bold uppercase">
+                <a href="" class="py-2 px-5 text-black">Tentang</a>
+            </div>
+        </div>
+    </nav>
+</section>
+
+<!-- untuk List gallery -->
+
+<section class="w-full mx-auto p-10">
+    <div class="text-center font-mono mx-20 border border-blue-700 hover:bg-blue-700 hover:text-white hover:duration-300">
+        <h1 class="text-2xl">Welcome to My Gallery</h1>
+    </div>
+    <div class="mx-20 mt-10">
+        <div class="grid md:grid-cols-4 sm:grid-cols-2 gap-10">
+            <div class="rounded-xl relative">
+                <div class="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm">
+                    <a onclick="openModal(true)" href="#">
+                        <img id="images" class="object-cover h-80 w-full hover:opacity-30 hover:duration-300" src="assets/images/car1.jpg" alt="">
+                    </a>
+                    <div class="w-full text-right absolute bottom-0 right-0">
+                        <h2 class=" text-center font-bold text-xl p-3 rounded-tl-full bg-white">Title goes here</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="rounded-xl relative">
+                <div class="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm">
+                    <a onclick="openModal(true)" href="#">
+                        <img id="images" class="object-cover h-80 w-full hover:opacity-30 hover:duration-300uration-300 " src="assets/images/car1.jpg" alt="">
+                    </a>
+                    <div class="w-full text-right absolute bottom-0 right-0">
+                        <h2 class=" text-center font-bold text-xl p-3 rounded-tl-full bg-white">Title goes here</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="rounded-xl relative">
+                <div class="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm">
+                    <a onclick="openModal(true)" href="#">
+                        <img id="images" class="object-cover h-80 w-full hover:opacity-30 hover:duration-300" src="assets/images/car1.jpg" alt="">
+                    </a>
+                    <div class="w-full text-right absolute bottom-0 right-0">
+                        <h2 class=" text-center font-bold text-xl p-3 rounded-tl-full bg-white">Title goes here</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="rounded-xl relative">
+                <div class="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm">
+                    <a onclick="openModal(true)" href="#">
+                        <img id="images" class="object-cover h-80 w-full hover:opacity-30 hover:duration-300" src="assets/images/car1.jpg" alt="">
+                    </a>
+                    <div class="w-full text-right absolute bottom-0 right-0">
+                        <h2 class=" text-center font-bold text-xl p-3 rounded-tl-full bg-white">Title goes here</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="rounded-xl relative">
+                <div class="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm">
+                    <a onclick="openModal(true)" href="#">
+                        <img id="images" class="object-cover h-80 w-full hover:opacity-30 hover:duration-300" src="assets/images/car1.jpg" alt="">
+                    </a>
+                    <div class="w-full text-right absolute bottom-0 right-0">
+                        <h2 class=" text-center font-bold text-xl p-3 rounded-tl-full bg-white">Title goes here</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="rounded-xl relative">
+                <div class="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm">
+                    <a onclick="openModal(true)" href="#">
+                        <img id="images" class="object-cover h-80 w-full hover:opacity-30 hover:duration-300" src="assets/images/car1.jpg" alt="">
+                    </a>
+                    <div class="w-full text-right absolute bottom-0 right-0">
+                        <h2 class=" text-center font-bold text-xl p-3 rounded-tl-full bg-white">Title goes here</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="rounded-xl relative">
+                <div class="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm">
+                    <a onclick="openModal(true)" href="#">
+                        <img id="images" class="object-cover h-80 w-full hover:opacity-30 hover:duration-300" src="assets/images/car1.jpg" alt="">
+                    </a>
+                    <div class="w-full text-right absolute bottom-0 right-0">
+                        <h2 class=" text-center font-bold text-xl p-3 rounded-tl-full bg-white">Title goes here</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="rounded-xl relative">
+                <div class="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm">
+                    <a onclick="openModal(true)" href="#">
+                        <img id="images" class="object-cover h-80 w-full hover:opacity-30 hover:duration-300" src="assets/images/car1.jpg" alt="">
+                    </a>
+                    <div class="w-full text-right absolute bottom-0 right-0">
+                        <h2 class=" text-center font-bold text-xl p-3 rounded-tl-full bg-white">Title goes here</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- untuk isi Pop Up -->
+
+<section class="w-full mx-auto p-10">
+    <div id="modal_overlay" class="hidden absolute inset-0 bg-black bg-opacity-30 h-full w-full justify-center items-start md:items-center pt-10 md:pt-0">
+        <div id="modal" class="pacity-0 transform -translate-y-full scale-150 relative bg-white rounded shadow-lg transition-transform duration-300">
+            <button onclick="openModal(false)" class="z-10 absolute -top-3 -right-3 bg-red-500 hover:bg-red-600 text-2xl w-10 h-10 rounded-full focus:outline-none text-white">&cross;</button>
+            <div class="flex justify-center">
+                <div class="rounded-xl relative">
+                    <div id="popup-image" class="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm">
+                        <a href="#">
+                            <img id="images" class="object-fill w-full" src="assets/images/car1.jpg" alt="">
+                        </a>
+                        <div class="w-full text-right absolute bottom-0 right-0">
+                            <h2 class="text-center font-bold text-xl p-3 rounded-tl-full bg-white">Title goes here</h2>
+                            <p class="text-justify px-3 bg-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum labore id impedit animi error aliquam dignissimos tempore tempora et itaque!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>        
+        </div>
+    </div>
+</section>
+
+<script src="app.js"></script>
+</body>
+</html>
